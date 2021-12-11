@@ -1,0 +1,24 @@
+(mesh) cezheng@lambda-dual:/data/GTRS$ python main/test.py --gpu 0,1 --cfg ./asset/yaml/pam_human36J_test_human36.yml
+Experiment Data on /data/GTRS/lib/core/../../experiment/exp_12-05_15:40
+Work on GPU:  0,1
+==> Preparing TEST Dataloader...
+/data/GTRS/main/../smplpytorch/smplpytorch/pytorch/smpl_layer.py:41: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370172916/work/torch/csrc/utils/tensor_numpy.cpp:141.)
+  torch.Tensor(smpl_data['betas'].r).unsqueeze(0))
+Load annotations of Human36M Protocol 2
+creating index...
+index created!
+Check lengths of annotation and detection output:  11079 11079
+Heavy Edge Matching coarsening with Xavier version
+# of TEST Human36M data: 11079
+==> Preparing PAM MODEL...
+# of model parameters: 3318514
+==> Loading checkpoint
+Fetch model weight from ./experiment/pam_h36m/best.pth.tar
+===> Start testing...
+(170/174) => joint error: 52.6756: 100%|██████| 174/174 [00:21<00:00,  8.05it/s]
+ MPJPE: 64.6436
+Evaluation start...
+MPJPE (mm)    >> tot: 64.65
+
+PA-MPJPE (mm) >> tot: 47.72
+

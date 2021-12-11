@@ -1,0 +1,424 @@
+(mesh) cezheng@lambda-dual:/data/GTRS$ python main/train.py --gpu 0,1 --cfg ./asset/yaml/gtrs_human36J_train_human36.yml
+Experiment Data on /data/GTRS/lib/core/../../experiment/exp_12-05_08:16
+Work on GPU:  0,1
+==> Preparing TRAIN Dataloader...
+/data/GTRS/main/../smplpytorch/smplpytorch/pytorch/smpl_layer.py:41: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370172916/work/torch/csrc/utils/tensor_numpy.cpp:141.)
+  torch.Tensor(smpl_data['betas'].r).unsqueeze(0))
+Load annotations of Human36M Protocol 2
+creating index...
+index created!
+Heavy Edge Matching coarsening with Xavier version
+# of TRAIN Human36M data: 311856
+==> Preparing GTRS_net MODEL...
+Loading pretrained posenet...
+Fetch model weight from ./experiment/pam_h36m/best.pth.tar
+# of model parameters: 7651615
+==> Preparing TEST Dataloader...
+Load annotations of Human36M Protocol 2
+creating index...
+index created!
+Check lengths of annotation and detection output:  11079 11079
+Heavy Edge Matching coarsening with Xavier version
+# of TEST Human36M data: 11079
+===> Start training...
+Current epoch 1, lr: 0.0001
+Epoch1_(240/305) => vertice loss: 0.0497 normal loss: 0.0049 edge loss: 0.0000 m
+Epoch1 Loss: 0.1477
+Epoch1 (160/174) => surface error: 140.0827, joint error: 67.9725: 100%|█| 174/1
+Epoch1  MPVPE: 168.88, MPJPE: 73.48
+Current epoch 2, lr: 0.0001
+Epoch2_(240/305) => vertice loss: 0.0284 normal loss: 0.0048 edge loss: 0.0054 m
+Epoch2 Loss: 0.0794
+Epoch2 (160/174) => surface error: 96.7918, joint error: 66.1709: 100%|█| 174/17
+Epoch2  MPVPE: 110.31, MPJPE: 69.17
+Current epoch 3, lr: 0.0001
+Epoch3_(240/305) => vertice loss: 0.0226 normal loss: 0.0046 edge loss: 0.0034 m
+Epoch3 Loss: 0.0641
+Epoch3 (160/174) => surface error: 87.9943, joint error: 64.2181: 100%|█| 174/17
+Epoch3  MPVPE: 98.81, MPJPE: 67.40
+Current epoch 4, lr: 0.0001
+Epoch4_(240/305) => vertice loss: 0.0208 normal loss: 0.0044 edge loss: 0.0026 m
+Epoch4 Loss: 0.0585
+Epoch4 (160/174) => surface error: 85.7000, joint error: 64.0175: 100%|█| 174/17
+Epoch4  MPVPE: 94.40, MPJPE: 66.92
+Current epoch 5, lr: 0.0001
+Epoch5_(240/305) => vertice loss: 0.0198 normal loss: 0.0043 edge loss: 0.0021 m
+Epoch5 Loss: 0.0554
+Epoch5 (160/174) => surface error: 80.0811, joint error: 60.9445: 100%|█| 174/17
+Epoch5  MPVPE: 92.23, MPJPE: 66.31
+Current epoch 6, lr: 0.0001
+Epoch6_(240/305) => vertice loss: 0.0197 normal loss: 0.0042 edge loss: 0.0018 m
+Epoch6 Loss: 0.0534
+Epoch6 (160/174) => surface error: 81.4304, joint error: 62.9991: 100%|█| 174/17
+Epoch6  MPVPE: 90.96, MPJPE: 66.54
+Current epoch 7, lr: 0.0001
+Epoch7_(240/305) => vertice loss: 0.0189 normal loss: 0.0040 edge loss: 0.0016 m
+Epoch7 Loss: 0.0518
+Epoch7 (160/174) => surface error: 80.9001, joint error: 62.8748: 100%|█| 174/17
+Epoch7  MPVPE: 90.55, MPJPE: 66.66
+Current epoch 8, lr: 0.0001
+Epoch8_(240/305) => vertice loss: 0.0175 normal loss: 0.0039 edge loss: 0.0014 m
+Epoch8 Loss: 0.0506
+Epoch8 (160/174) => surface error: 82.1564, joint error: 63.8065: 100%|█| 174/17
+Epoch8  MPVPE: 90.47, MPJPE: 65.84
+Current epoch 9, lr: 0.0001
+Epoch9_(240/305) => vertice loss: 0.0161 normal loss: 0.0038 edge loss: 0.0014 m
+Epoch9 Loss: 0.0496
+Epoch9 (160/174) => surface error: 82.1680, joint error: 63.2653: 100%|█| 174/17
+Epoch9  MPVPE: 90.10, MPJPE: 66.38
+Current epoch 10, lr: 0.0001
+Epoch10_(240/305) => vertice loss: 0.0164 normal loss: 0.0037 edge loss: 0.0013 
+Epoch10 Loss: 0.0488
+Epoch10 (160/174) => surface error: 80.9183, joint error: 63.9680: 100%|█| 174/1
+Epoch10  MPVPE: 88.44, MPJPE: 65.66
+Current epoch 11, lr: 9e-05
+Epoch11_(240/305) => vertice loss: 0.0165 normal loss: 0.0036 edge loss: 0.0012 
+Epoch11 Loss: 0.0480
+Epoch11 (160/174) => surface error: 80.4547, joint error: 62.9724: 100%|█| 174/1
+Epoch11  MPVPE: 88.75, MPJPE: 65.85
+Current epoch 12, lr: 9e-05
+Epoch12_(240/305) => vertice loss: 0.0170 normal loss: 0.0035 edge loss: 0.0011 
+Epoch12 Loss: 0.0474
+Epoch12 (160/174) => surface error: 79.2845, joint error: 62.6273: 100%|█| 174/1
+Epoch12  MPVPE: 87.90, MPJPE: 65.55
+Current epoch 13, lr: 9e-05
+Epoch13_(240/305) => vertice loss: 0.0177 normal loss: 0.0035 edge loss: 0.0011 
+Epoch13 Loss: 0.0470
+Epoch13 (160/174) => surface error: 76.9910, joint error: 60.8814: 100%|█| 174/1
+Epoch13  MPVPE: 88.50, MPJPE: 65.75
+Current epoch 14, lr: 9e-05
+Epoch14_(240/305) => vertice loss: 0.0164 normal loss: 0.0034 edge loss: 0.0010 
+Epoch14 Loss: 0.0465
+Epoch14 (160/174) => surface error: 78.6912, joint error: 62.2139: 100%|█| 174/1
+Epoch14  MPVPE: 86.91, MPJPE: 65.70
+Current epoch 15, lr: 9e-05
+Epoch15_(240/305) => vertice loss: 0.0170 normal loss: 0.0033 edge loss: 0.0010 
+Epoch15 Loss: 0.0461
+Epoch15 (160/174) => surface error: 80.1182, joint error: 62.2456: 100%|█| 174/1
+Epoch15  MPVPE: 88.38, MPJPE: 65.76
+Current epoch 16, lr: 9e-05
+Epoch16_(240/305) => vertice loss: 0.0164 normal loss: 0.0032 edge loss: 0.0009 
+Epoch16 Loss: 0.0457
+Epoch16 (160/174) => surface error: 73.5520, joint error: 59.3505: 100%|█| 174/1
+Epoch16  MPVPE: 86.84, MPJPE: 65.21
+Current epoch 17, lr: 9e-05
+Epoch17_(240/305) => vertice loss: 0.0160 normal loss: 0.0032 edge loss: 0.0009 
+Epoch17 Loss: 0.0453
+Epoch17 (160/174) => surface error: 76.9987, joint error: 61.0313: 100%|█| 174/1
+Epoch17  MPVPE: 87.12, MPJPE: 64.96
+Current epoch 18, lr: 9e-05
+Epoch18_(240/305) => vertice loss: 0.0163 normal loss: 0.0031 edge loss: 0.0009 
+Epoch18 Loss: 0.0451
+Epoch18 (160/174) => surface error: 75.7189, joint error: 60.8352: 100%|█| 174/1
+Epoch18  MPVPE: 87.11, MPJPE: 65.07
+Current epoch 19, lr: 9e-05
+Epoch19_(240/305) => vertice loss: 0.0154 normal loss: 0.0031 edge loss: 0.0008 
+Epoch19 Loss: 0.0447
+Epoch19 (160/174) => surface error: 75.2259, joint error: 60.3189: 100%|█| 174/1
+Epoch19  MPVPE: 86.71, MPJPE: 65.25
+Current epoch 20, lr: 9e-05
+Epoch20_(240/305) => vertice loss: 0.0157 normal loss: 0.0031 edge loss: 0.0008 
+Epoch20 Loss: 0.0444
+Epoch20 (160/174) => surface error: 79.6282, joint error: 63.5863: 100%|█| 174/1
+Epoch20  MPVPE: 87.70, MPJPE: 65.37
+Current epoch 21, lr: 9e-05
+Epoch21_(240/305) => vertice loss: 0.0152 normal loss: 0.0030 edge loss: 0.0008 
+Epoch21 Loss: 0.0442
+Epoch21 (160/174) => surface error: 76.4641, joint error: 60.8607: 100%|█| 174/1
+Epoch21  MPVPE: 86.23, MPJPE: 66.27
+Current epoch 22, lr: 9e-05
+Epoch22_(240/305) => vertice loss: 0.0156 normal loss: 0.0030 edge loss: 0.0008 
+Epoch22 Loss: 0.0439
+Epoch22 (160/174) => surface error: 77.9507, joint error: 63.1299: 100%|█| 174/1
+Epoch22  MPVPE: 86.85, MPJPE: 65.51
+Current epoch 23, lr: 9e-05
+Epoch23_(240/305) => vertice loss: 0.0155 normal loss: 0.0029 edge loss: 0.0008 
+Epoch23 Loss: 0.0437
+Epoch23 (160/174) => surface error: 80.0687, joint error: 62.9584: 100%|█| 174/1
+Epoch23  MPVPE: 87.39, MPJPE: 65.78
+Current epoch 24, lr: 9e-05
+Epoch24_(240/305) => vertice loss: 0.0156 normal loss: 0.0029 edge loss: 0.0007 
+Epoch24 Loss: 0.0435
+Epoch24 (160/174) => surface error: 76.9368, joint error: 61.6572: 100%|█| 174/1
+Epoch24  MPVPE: 86.60, MPJPE: 65.31
+Current epoch 25, lr: 9e-05
+Epoch25_(240/305) => vertice loss: 0.0157 normal loss: 0.0029 edge loss: 0.0007 
+Epoch25 Loss: 0.0433
+Epoch25 (160/174) => surface error: 74.6925, joint error: 59.9816: 100%|█| 174/1
+Epoch25  MPVPE: 86.69, MPJPE: 65.19
+Current epoch 26, lr: 9e-05
+Epoch26_(240/305) => vertice loss: 0.0159 normal loss: 0.0028 edge loss: 0.0007 
+Epoch26 Loss: 0.0431
+Epoch26 (160/174) => surface error: 75.2355, joint error: 60.4492: 100%|█| 174/1
+Epoch26  MPVPE: 86.44, MPJPE: 65.46
+Current epoch 27, lr: 9e-05
+Epoch27_(240/305) => vertice loss: 0.0156 normal loss: 0.0028 edge loss: 0.0007 
+Epoch27 Loss: 0.0428
+Epoch27 (160/174) => surface error: 74.9547, joint error: 60.2347: 100%|█| 174/1
+Epoch27  MPVPE: 86.43, MPJPE: 65.00
+Current epoch 28, lr: 9e-05
+Epoch28_(240/305) => vertice loss: 0.0157 normal loss: 0.0028 edge loss: 0.0007 
+Epoch28 Loss: 0.0427
+Epoch28 (160/174) => surface error: 72.4904, joint error: 58.3792: 100%|█| 174/1
+Epoch28  MPVPE: 86.17, MPJPE: 65.20
+Current epoch 29, lr: 9e-05
+Epoch29_(240/305) => vertice loss: 0.0145 normal loss: 0.0027 edge loss: 0.0007 
+Epoch29 Loss: 0.0425
+Epoch29 (160/174) => surface error: 76.5736, joint error: 61.1812: 100%|█| 174/1
+Epoch29  MPVPE: 86.14, MPJPE: 65.36
+Current epoch 30, lr: 9e-05
+Epoch30_(240/305) => vertice loss: 0.0152 normal loss: 0.0027 edge loss: 0.0007 
+Epoch30 Loss: 0.0423
+Epoch30 (160/174) => surface error: 75.5893, joint error: 60.4713: 100%|█| 174/1
+Epoch30  MPVPE: 86.24, MPJPE: 64.92
+Current epoch 31, lr: 8.1e-05
+Epoch31_(240/305) => vertice loss: 0.0156 normal loss: 0.0027 edge loss: 0.0006 
+Epoch31 Loss: 0.0420
+Epoch31 (160/174) => surface error: 74.6739, joint error: 59.7556: 100%|█| 174/1
+Epoch31  MPVPE: 86.12, MPJPE: 64.63
+Current epoch 32, lr: 8.1e-05
+Epoch32_(240/305) => vertice loss: 0.0144 normal loss: 0.0026 edge loss: 0.0006 
+Epoch32 Loss: 0.0419
+Epoch32 (160/174) => surface error: 80.7294, joint error: 64.4829: 100%|█| 174/1
+Epoch32  MPVPE: 87.04, MPJPE: 65.72
+Current epoch 33, lr: 8.1e-05
+Epoch33_(240/305) => vertice loss: 0.0153 normal loss: 0.0027 edge loss: 0.0006 
+Epoch33 Loss: 0.0418
+Epoch33 (160/174) => surface error: 73.2217, joint error: 59.1315: 100%|█| 174/1
+Epoch33  MPVPE: 85.48, MPJPE: 64.66
+Current epoch 34, lr: 8.1e-05
+Epoch34_(240/305) => vertice loss: 0.0141 normal loss: 0.0026 edge loss: 0.0006 
+Epoch34 Loss: 0.0416
+Epoch34 (160/174) => surface error: 73.4665, joint error: 58.9919: 100%|█| 174/1
+Epoch34  MPVPE: 86.03, MPJPE: 65.33
+Current epoch 35, lr: 8.1e-05
+Epoch35_(240/305) => vertice loss: 0.0151 normal loss: 0.0026 edge loss: 0.0006 
+Epoch35 Loss: 0.0415
+Epoch35 (160/174) => surface error: 75.2423, joint error: 60.6491: 100%|█| 174/1
+Epoch35  MPVPE: 85.68, MPJPE: 65.05
+Current epoch 36, lr: 8.1e-05
+Epoch36_(240/305) => vertice loss: 0.0145 normal loss: 0.0026 edge loss: 0.0006 
+Epoch36 Loss: 0.0414
+Epoch36 (160/174) => surface error: 77.1050, joint error: 62.2264: 100%|█| 174/1
+Epoch36  MPVPE: 86.18, MPJPE: 65.19
+Current epoch 37, lr: 8.1e-05
+Epoch37_(240/305) => vertice loss: 0.0148 normal loss: 0.0026 edge loss: 0.0006 
+Epoch37 Loss: 0.0413
+Epoch37 (160/174) => surface error: 74.9384, joint error: 60.4689: 100%|█| 174/1
+Epoch37  MPVPE: 85.92, MPJPE: 65.18
+Current epoch 38, lr: 8.1e-05
+Epoch38_(240/305) => vertice loss: 0.0144 normal loss: 0.0025 edge loss: 0.0006 
+Epoch38 Loss: 0.0412
+Epoch38 (160/174) => surface error: 76.8660, joint error: 61.9044: 100%|█| 174/1
+Epoch38  MPVPE: 85.79, MPJPE: 65.02
+Current epoch 39, lr: 8.1e-05
+Epoch39_(240/305) => vertice loss: 0.0147 normal loss: 0.0025 edge loss: 0.0006 
+Epoch39 Loss: 0.0410
+Epoch39 (160/174) => surface error: 78.5197, joint error: 62.8838: 100%|█| 174/1
+Epoch39  MPVPE: 85.58, MPJPE: 65.11
+Current epoch 40, lr: 8.1e-05
+Epoch40_(240/305) => vertice loss: 0.0142 normal loss: 0.0026 edge loss: 0.0006 
+Epoch40 Loss: 0.0409
+Epoch40 (160/174) => surface error: 76.8741, joint error: 61.6191: 100%|█| 174/1
+Epoch40  MPVPE: 86.16, MPJPE: 64.83
+Current epoch 41, lr: 8.1e-05
+Epoch41_(240/305) => vertice loss: 0.0146 normal loss: 0.0025 edge loss: 0.0006 
+Epoch41 Loss: 0.0408
+Epoch41 (160/174) => surface error: 74.2813, joint error: 59.5110: 100%|█| 174/1
+Epoch41  MPVPE: 85.51, MPJPE: 64.93
+Current epoch 42, lr: 8.1e-05
+Epoch42_(240/305) => vertice loss: 0.0145 normal loss: 0.0025 edge loss: 0.0006 
+Epoch42 Loss: 0.0406
+Epoch42 (160/174) => surface error: 78.6891, joint error: 63.3656: 100%|█| 174/1
+Epoch42  MPVPE: 86.33, MPJPE: 65.28
+Current epoch 43, lr: 8.1e-05
+Epoch43_(240/305) => vertice loss: 0.0132 normal loss: 0.0025 edge loss: 0.0006 
+Epoch43 Loss: 0.0406
+Epoch43 (160/174) => surface error: 74.4546, joint error: 60.1733: 100%|█| 174/1
+Epoch43  MPVPE: 85.57, MPJPE: 65.05
+Current epoch 44, lr: 8.1e-05
+Epoch44_(240/305) => vertice loss: 0.0150 normal loss: 0.0024 edge loss: 0.0005 
+Epoch44 Loss: 0.0405
+Epoch44 (160/174) => surface error: 75.8386, joint error: 60.9435: 100%|█| 174/1
+Epoch44  MPVPE: 85.84, MPJPE: 65.02
+Current epoch 45, lr: 8.1e-05
+Epoch45_(240/305) => vertice loss: 0.0144 normal loss: 0.0024 edge loss: 0.0005 
+Epoch45 Loss: 0.0404
+Epoch45 (160/174) => surface error: 78.5179, joint error: 61.9452: 100%|█| 174/1
+Epoch45  MPVPE: 86.86, MPJPE: 65.59
+Current epoch 46, lr: 8.1e-05
+Epoch46_(240/305) => vertice loss: 0.0143 normal loss: 0.0024 edge loss: 0.0005 
+Epoch46 Loss: 0.0403
+Epoch46 (160/174) => surface error: 75.5464, joint error: 60.5467: 100%|█| 174/1
+Epoch46  MPVPE: 86.27, MPJPE: 65.25
+Current epoch 47, lr: 8.1e-05
+Epoch47_(240/305) => vertice loss: 0.0146 normal loss: 0.0024 edge loss: 0.0005 
+Epoch47 Loss: 0.0401
+Epoch47 (160/174) => surface error: 76.6458, joint error: 60.9530: 100%|█| 174/1
+Epoch47  MPVPE: 86.17, MPJPE: 64.99
+Current epoch 48, lr: 8.1e-05
+Epoch48_(240/305) => vertice loss: 0.0144 normal loss: 0.0024 edge loss: 0.0005 
+Epoch48 Loss: 0.0401
+Epoch48 (160/174) => surface error: 79.6300, joint error: 63.6860: 100%|█| 174/1
+Epoch48  MPVPE: 86.84, MPJPE: 65.47
+Current epoch 49, lr: 8.1e-05
+Epoch49_(240/305) => vertice loss: 0.0145 normal loss: 0.0024 edge loss: 0.0005 
+Epoch49 Loss: 0.0400
+Epoch49 (160/174) => surface error: 77.4426, joint error: 61.7217: 100%|█| 174/1
+Epoch49  MPVPE: 85.80, MPJPE: 65.31
+Current epoch 50, lr: 8.1e-05
+Epoch50_(240/305) => vertice loss: 0.0141 normal loss: 0.0024 edge loss: 0.0005 
+Epoch50 Loss: 0.0399
+Epoch50 (160/174) => surface error: 76.7150, joint error: 61.1682: 100%|█| 174/1
+Epoch50  MPVPE: 85.55, MPJPE: 64.96
+Current epoch 51, lr: 8.1e-05
+Epoch51_(240/305) => vertice loss: 0.0146 normal loss: 0.0023 edge loss: 0.0005 
+Epoch51 Loss: 0.0398
+Epoch51 (160/174) => surface error: 74.1895, joint error: 60.2049: 100%|█| 174/1
+Epoch51  MPVPE: 85.31, MPJPE: 64.86
+Current epoch 52, lr: 8.1e-05
+Epoch52_(240/305) => vertice loss: 0.0139 normal loss: 0.0024 edge loss: 0.0005 
+Epoch52 Loss: 0.0397
+Epoch52 (160/174) => surface error: 77.9790, joint error: 62.5486: 100%|█| 174/1
+Epoch52  MPVPE: 86.38, MPJPE: 65.11
+Current epoch 53, lr: 8.1e-05
+Epoch53_(240/305) => vertice loss: 0.0132 normal loss: 0.0023 edge loss: 0.0005 
+Epoch53 Loss: 0.0396
+Epoch53 (160/174) => surface error: 74.7829, joint error: 59.7488: 100%|█| 174/1
+Epoch53  MPVPE: 85.48, MPJPE: 65.02
+Current epoch 54, lr: 8.1e-05
+Epoch54_(240/305) => vertice loss: 0.0144 normal loss: 0.0023 edge loss: 0.0005 
+Epoch54 Loss: 0.0395
+Epoch54 (160/174) => surface error: 77.8054, joint error: 61.8096: 100%|█| 174/1
+Epoch54  MPVPE: 85.87, MPJPE: 65.12
+Current epoch 55, lr: 8.1e-05
+Epoch55_(240/305) => vertice loss: 0.0131 normal loss: 0.0023 edge loss: 0.0005 
+Epoch55 Loss: 0.0395
+Epoch55 (160/174) => surface error: 73.2941, joint error: 59.5246: 100%|█| 174/1
+Epoch55  MPVPE: 85.58, MPJPE: 64.89
+Current epoch 56, lr: 8.1e-05
+Epoch56_(240/305) => vertice loss: 0.0149 normal loss: 0.0023 edge loss: 0.0005 
+Epoch56 Loss: 0.0394
+Epoch56 (160/174) => surface error: 77.7477, joint error: 62.4240: 100%|█| 174/1
+Epoch56  MPVPE: 85.83, MPJPE: 64.93
+Current epoch 57, lr: 8.1e-05
+Epoch57_(240/305) => vertice loss: 0.0147 normal loss: 0.0023 edge loss: 0.0005 
+Epoch57 Loss: 0.0393
+Epoch57 (160/174) => surface error: 75.4518, joint error: 60.9184: 100%|█| 174/1
+Epoch57  MPVPE: 85.30, MPJPE: 65.01
+Current epoch 58, lr: 8.1e-05
+Epoch58_(240/305) => vertice loss: 0.0146 normal loss: 0.0023 edge loss: 0.0005 
+Epoch58 Loss: 0.0392
+Epoch58 (160/174) => surface error: 77.4362, joint error: 62.6882: 100%|█| 174/1
+Epoch58  MPVPE: 85.55, MPJPE: 65.27
+Current epoch 59, lr: 8.1e-05
+Epoch59_(240/305) => vertice loss: 0.0137 normal loss: 0.0022 edge loss: 0.0005 
+Epoch59 Loss: 0.0391
+Epoch59 (160/174) => surface error: 75.8871, joint error: 61.1905: 100%|█| 174/1
+Epoch59  MPVPE: 85.31, MPJPE: 65.22
+Current epoch 60, lr: 8.1e-05
+Epoch60_(240/305) => vertice loss: 0.0137 normal loss: 0.0023 edge loss: 0.0005 
+Epoch60 Loss: 0.0391
+Epoch60 (160/174) => surface error: 74.9730, joint error: 60.8157: 100%|█| 174/1
+Epoch60  MPVPE: 85.14, MPJPE: 64.89
+Current epoch 61, lr: 7.290000000000001e-05
+Epoch61_(240/305) => vertice loss: 0.0143 normal loss: 0.0022 edge loss: 0.0005 
+Epoch61 Loss: 0.0389
+Epoch61 (160/174) => surface error: 76.1048, joint error: 61.6655: 100%|█| 174/1
+Epoch61  MPVPE: 85.50, MPJPE: 65.32
+Current epoch 62, lr: 7.290000000000001e-05
+Epoch62_(240/305) => vertice loss: 0.0135 normal loss: 0.0022 edge loss: 0.0005 
+Epoch62 Loss: 0.0388
+Epoch62 (160/174) => surface error: 78.1377, joint error: 62.8261: 100%|█| 174/1
+Epoch62  MPVPE: 85.75, MPJPE: 65.12
+Current epoch 63, lr: 7.290000000000001e-05
+Epoch63_(240/305) => vertice loss: 0.0140 normal loss: 0.0023 edge loss: 0.0005 
+Epoch63 Loss: 0.0388
+Epoch63 (160/174) => surface error: 74.7109, joint error: 60.5712: 100%|█| 174/1
+Epoch63  MPVPE: 85.24, MPJPE: 64.87
+Current epoch 64, lr: 7.290000000000001e-05
+Epoch64_(240/305) => vertice loss: 0.0134 normal loss: 0.0022 edge loss: 0.0005 
+Epoch64 Loss: 0.0387
+Epoch64 (160/174) => surface error: 78.8979, joint error: 63.8320: 100%|█| 174/1
+Epoch64  MPVPE: 85.83, MPJPE: 65.59
+Current epoch 65, lr: 7.290000000000001e-05
+Epoch65_(240/305) => vertice loss: 0.0141 normal loss: 0.0022 edge loss: 0.0005 
+Epoch65 Loss: 0.0386
+Epoch65 (160/174) => surface error: 78.9144, joint error: 62.5109: 100%|█| 174/1
+Epoch65  MPVPE: 85.55, MPJPE: 64.96
+Current epoch 66, lr: 7.290000000000001e-05
+Epoch66_(240/305) => vertice loss: 0.0136 normal loss: 0.0022 edge loss: 0.0005 
+Epoch66 Loss: 0.0385
+Epoch66 (160/174) => surface error: 74.5817, joint error: 60.3760: 100%|█| 174/1
+Epoch66  MPVPE: 85.14, MPJPE: 64.84
+Current epoch 67, lr: 7.290000000000001e-05
+Epoch67_(240/305) => vertice loss: 0.0139 normal loss: 0.0022 edge loss: 0.0004 
+Epoch67 Loss: 0.0385
+Epoch67 (160/174) => surface error: 77.0632, joint error: 62.1583: 100%|█| 174/1
+Epoch67  MPVPE: 85.68, MPJPE: 65.20
+Current epoch 68, lr: 7.290000000000001e-05
+Epoch68_(240/305) => vertice loss: 0.0137 normal loss: 0.0022 edge loss: 0.0004 
+Epoch68 Loss: 0.0384
+Epoch68 (160/174) => surface error: 75.4381, joint error: 60.8247: 100%|█| 174/1
+Epoch68  MPVPE: 85.35, MPJPE: 65.05
+Current epoch 69, lr: 7.290000000000001e-05
+Epoch69_(240/305) => vertice loss: 0.0145 normal loss: 0.0022 edge loss: 0.0004 
+Epoch69 Loss: 0.0384
+Epoch69 (160/174) => surface error: 76.3147, joint error: 61.5183: 100%|█| 174/1
+Epoch69  MPVPE: 85.42, MPJPE: 64.80
+Current epoch 70, lr: 7.290000000000001e-05
+Epoch70_(240/305) => vertice loss: 0.0133 normal loss: 0.0022 edge loss: 0.0004 
+Epoch70 Loss: 0.0383
+Epoch70 (160/174) => surface error: 78.0797, joint error: 63.0344: 100%|█| 174/1
+Epoch70  MPVPE: 85.82, MPJPE: 65.14
+Current epoch 71, lr: 7.290000000000001e-05
+Epoch71_(240/305) => vertice loss: 0.0134 normal loss: 0.0021 edge loss: 0.0004 
+Epoch71 Loss: 0.0382
+Epoch71 (160/174) => surface error: 77.3593, joint error: 62.8358: 100%|█| 174/1
+Epoch71  MPVPE: 85.63, MPJPE: 65.24
+Current epoch 72, lr: 7.290000000000001e-05
+Epoch72_(240/305) => vertice loss: 0.0139 normal loss: 0.0022 edge loss: 0.0004 
+Epoch72 Loss: 0.0382
+Epoch72 (160/174) => surface error: 76.0395, joint error: 60.6310: 100%|█| 174/1
+Epoch72  MPVPE: 85.24, MPJPE: 64.90
+Current epoch 73, lr: 7.290000000000001e-05
+Epoch73_(240/305) => vertice loss: 0.0133 normal loss: 0.0021 edge loss: 0.0004 
+Epoch73 Loss: 0.0381
+Epoch73 (160/174) => surface error: 74.7542, joint error: 60.3850: 100%|█| 174/1
+Epoch73  MPVPE: 85.41, MPJPE: 64.36
+Current epoch 74, lr: 7.290000000000001e-05
+Epoch74_(240/305) => vertice loss: 0.0134 normal loss: 0.0021 edge loss: 0.0004 
+Epoch74 Loss: 0.0381
+Epoch74 (160/174) => surface error: 75.9839, joint error: 61.5687: 100%|█| 174/1
+Epoch74  MPVPE: 85.85, MPJPE: 64.98
+Current epoch 75, lr: 7.290000000000001e-05
+Epoch75_(240/305) => vertice loss: 0.0136 normal loss: 0.0021 edge loss: 0.0004 
+Epoch75 Loss: 0.0380
+Epoch75 (160/174) => surface error: 76.4512, joint error: 61.3082: 100%|█| 174/1
+Epoch75  MPVPE: 85.91, MPJPE: 64.96
+Current epoch 76, lr: 7.290000000000001e-05
+Epoch76_(240/305) => vertice loss: 0.0132 normal loss: 0.0021 edge loss: 0.0004 
+Epoch76 Loss: 0.0380
+Epoch76 (160/174) => surface error: 76.6780, joint error: 61.0828: 100%|█| 174/1
+Epoch76  MPVPE: 85.34, MPJPE: 64.85
+Current epoch 77, lr: 7.290000000000001e-05
+Epoch77_(240/305) => vertice loss: 0.0130 normal loss: 0.0021 edge loss: 0.0004 
+Epoch77 Loss: 0.0379
+Epoch77 (160/174) => surface error: 75.2625, joint error: 60.4958: 100%|█| 174/1
+Epoch77  MPVPE: 85.44, MPJPE: 65.05
+Current epoch 78, lr: 7.290000000000001e-05
+Epoch78_(240/305) => vertice loss: 0.0143 normal loss: 0.0021 edge loss: 0.0004 
+Epoch78 Loss: 0.0379
+Epoch78 (160/174) => surface error: 76.7491, joint error: 61.7118: 100%|█| 174/1
+Epoch78  MPVPE: 85.32, MPJPE: 65.09
+Current epoch 79, lr: 7.290000000000001e-05
+Epoch79_(240/305) => vertice loss: 0.0139 normal loss: 0.0021 edge loss: 0.0004 
+Epoch79 Loss: 0.0378
+Epoch79 (160/174) => surface error: 77.9346, joint error: 62.3517: 100%|█| 174/1
+Epoch79  MPVPE: 85.49, MPJPE: 65.12
+Current epoch 80, lr: 7.290000000000001e-05
+Epoch80_(240/305) => vertice loss: 0.0131 normal loss: 0.0021 edge loss: 0.0004 
+Epoch80 Loss: 0.0377
+Epoch80 (160/174) => surface error: 75.2918, joint error: 61.2142: 100%|█| 174/1
+Epoch80  MPVPE: 85.28, MPJPE: 64.86
+

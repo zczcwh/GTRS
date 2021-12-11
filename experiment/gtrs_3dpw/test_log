@@ -1,0 +1,34 @@
+(mesh) cezheng@lambda-dual:/data/GTRS$ python main/test.py --gpu 0,1 --cfg ./asset/yaml/gtrs_cocoJ_test_3dpw.yml
+Experiment Data on /data/GTRS/lib/core/../../experiment/exp_12-08_06:55
+Work on GPU:  0,1
+==> Preparing TEST Dataloader...
+/data/GTRS/main/../smplpytorch/smplpytorch/pytorch/smpl_layer.py:41: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370172916/work/torch/csrc/utils/tensor_numpy.cpp:141.)
+  torch.Tensor(smpl_data['betas'].r).unsqueeze(0))
+Load annotations of 3DPW 
+loading annotations into memory...
+Done (t=11.13s)
+creating index...
+index created!
+num custom pose:  35515
+Heavy Edge Matching coarsening with Xavier version
+[ 2236  2237  2234 ... 12263 12275 12283]
+3dpw data len:  35515
+# of TEST PW3D data: 35515
+==> Preparing GTRS_net MODEL...
+# of model parameters: 7887393
+==> Loading checkpoint
+Fetch model weight from ./experiment/gtrs_3dpw/final.pth.tar
+===> Start testing...
+(550/555) => surface error: 84.7164, joint error: 73.9780: 100%|█| 555/555 [02:2
+ MPVPE: 105.42, MPJPE: 89.08
+Evaluation start...
+H36M MPJPE (mm)    >> tot: 89.06
+
+H36M PA-MPJPE (mm) >> tot: 59.24
+
+SMPL MPJPE (mm)    >> tot: 88.66
+
+MPVPE (mm)         >> tot: 106.23
+
+PA-MPVPE (mm)      >> tot: 0.00
+

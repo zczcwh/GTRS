@@ -1,0 +1,188 @@
+(mesh) cezheng@lambda-quad:~/HPE/GTRS$ python main/train.py --gpu 0,1 --cfg ./asset/yaml/pam_cocoJ_train_human36_coco_muco.yml
+Experiment Data on /home/cezheng/HPE/GTRS/lib/core/../../experiment/exp_12-05_15:44
+Work on GPU:  0,1
+==> Preparing TRAIN Dataloader...
+/home/cezheng/HPE/GTRS/main/../smplpytorch/smplpytorch/pytorch/smpl_layer.py:41: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/conda/conda-bld/pytorch_1634272204863/work/torch/csrc/utils/tensor_numpy.cpp:189.)
+  torch.Tensor(smpl_data['betas'].r).unsqueeze(0))
+Load annotations of Human36M Protocol 2
+creating index...
+index created!
+Heavy Edge Matching coarsening with Xavier version
+# of TRAIN Human36M data: 311856
+error stat joint num:  17
+Load annotations of COCO
+loading annotations into memory...
+Done (t=4.40s)
+creating index...
+index created!
+# of TRAIN COCO data: 28344
+loading annotations into memory...
+Done (t=40.48s)
+creating index...
+index created!
+# of TRAIN MuCo data: 199944
+==> Preparing PAM MODEL...
+# of model parameters: 3442898
+==> Preparing TEST Dataloader...
+Load annotations of 3DPW 
+loading annotations into memory...
+Done (t=3.30s)
+creating index...
+index created!
+num custom pose:  35515
+Heavy Edge Matching coarsening with Xavier version
+[ 2236  2237  2234 ... 12263 12275 12283]
+3dpw data len:  35515
+# of TEST PW3D data: 35515
+===> Start training...
+Current epoch 1, lr: 0.001
+Epoch1_(880/915) => total loss: 49.4118 : 100%|██████████████████████| 915/915 [08:39<00:00,  1.76it/s]
+Epoch1 Loss: 103.4680
+Epoch1 (480/555) => joint error: 111.1157: 100%|█████████████████████| 555/555 [00:55<00:00,  9.98it/s]
+Epoch1  MPJPE: 98.3420
+Current epoch 2, lr: 0.001
+Epoch2_(880/915) => total loss: 42.9671 : 100%|██████████████████████| 915/915 [08:45<00:00,  1.74it/s]
+Epoch2 Loss: 43.8823
+Epoch2 (480/555) => joint error: 97.3076: 100%|██████████████████████| 555/555 [00:58<00:00,  9.56it/s]
+Epoch2  MPJPE: 88.2392
+Current epoch 3, lr: 0.001
+Epoch3_(880/915) => total loss: 40.1452 : 100%|██████████████████████| 915/915 [08:48<00:00,  1.73it/s]
+Epoch3 Loss: 40.6264
+Epoch3 (480/555) => joint error: 97.4586: 100%|██████████████████████| 555/555 [00:58<00:00,  9.54it/s]
+Epoch3  MPJPE: 87.7983
+Current epoch 4, lr: 0.001
+Epoch4_(880/915) => total loss: 40.2910 : 100%|██████████████████████| 915/915 [08:49<00:00,  1.73it/s]
+Epoch4 Loss: 39.3494
+Epoch4 (480/555) => joint error: 95.2660: 100%|██████████████████████| 555/555 [01:02<00:00,  8.95it/s]
+Epoch4  MPJPE: 88.2764
+Current epoch 5, lr: 0.001
+Epoch5_(880/915) => total loss: 37.4240 : 100%|██████████████████████| 915/915 [08:49<00:00,  1.73it/s]
+Epoch5 Loss: 38.5472
+Epoch5 (480/555) => joint error: 104.7249: 100%|█████████████████████| 555/555 [00:57<00:00,  9.57it/s]
+Epoch5  MPJPE: 87.1563
+Current epoch 6, lr: 0.001
+Epoch6_(880/915) => total loss: 38.4937 : 100%|██████████████████████| 915/915 [08:50<00:00,  1.72it/s]
+Epoch6 Loss: 38.0147
+Epoch6 (480/555) => joint error: 90.2620: 100%|██████████████████████| 555/555 [00:58<00:00,  9.56it/s]
+Epoch6  MPJPE: 88.9070
+Current epoch 7, lr: 0.001
+Epoch7_(880/915) => total loss: 38.2714 : 100%|██████████████████████| 915/915 [08:47<00:00,  1.73it/s]
+Epoch7 Loss: 37.6036
+Epoch7 (480/555) => joint error: 95.8426: 100%|██████████████████████| 555/555 [01:00<00:00,  9.17it/s]
+Epoch7  MPJPE: 88.5980
+Current epoch 8, lr: 0.001
+Epoch8_(880/915) => total loss: 37.4054 : 100%|██████████████████████| 915/915 [08:47<00:00,  1.74it/s]
+Epoch8 Loss: 37.2031
+Epoch8 (480/555) => joint error: 92.6250: 100%|██████████████████████| 555/555 [00:59<00:00,  9.27it/s]
+Epoch8  MPJPE: 88.6999
+Current epoch 9, lr: 0.001
+Epoch9_(880/915) => total loss: 38.3066 : 100%|██████████████████████| 915/915 [08:47<00:00,  1.73it/s]
+Epoch9 Loss: 36.9292
+Epoch9 (480/555) => joint error: 98.3379: 100%|██████████████████████| 555/555 [00:59<00:00,  9.38it/s]
+Epoch9  MPJPE: 89.2523
+Current epoch 10, lr: 0.001
+Epoch10_(880/915) => total loss: 36.4153 : 100%|█████████████████████| 915/915 [08:47<00:00,  1.73it/s]
+Epoch10 Loss: 36.6763
+Epoch10 (480/555) => joint error: 100.6469: 100%|████████████████████| 555/555 [00:56<00:00,  9.84it/s]
+Epoch10  MPJPE: 91.2462
+Current epoch 11, lr: 0.0009000000000000001
+Epoch11_(880/915) => total loss: 36.5871 : 100%|█████████████████████| 915/915 [08:48<00:00,  1.73it/s]
+Epoch11 Loss: 36.3735
+Epoch11 (480/555) => joint error: 92.8319: 100%|█████████████████████| 555/555 [01:00<00:00,  9.14it/s]
+Epoch11  MPJPE: 87.9199
+Current epoch 12, lr: 0.0009000000000000001
+Epoch12_(880/915) => total loss: 35.9601 : 100%|█████████████████████| 915/915 [08:50<00:00,  1.72it/s]
+Epoch12 Loss: 36.1844
+Epoch12 (480/555) => joint error: 92.2926: 100%|█████████████████████| 555/555 [00:58<00:00,  9.49it/s]
+Epoch12  MPJPE: 87.7520
+Current epoch 13, lr: 0.0009000000000000001
+Epoch13_(880/915) => total loss: 36.4341 : 100%|█████████████████████| 915/915 [08:50<00:00,  1.73it/s]
+Epoch13 Loss: 36.0711
+Epoch13 (480/555) => joint error: 93.6516: 100%|█████████████████████| 555/555 [01:02<00:00,  8.90it/s]
+Epoch13  MPJPE: 87.8897
+Current epoch 14, lr: 0.0009000000000000001
+Epoch14_(880/915) => total loss: 34.1363 : 100%|█████████████████████| 915/915 [08:48<00:00,  1.73it/s]
+Epoch14 Loss: 35.8683
+Epoch14 (480/555) => joint error: 94.1947: 100%|█████████████████████| 555/555 [00:54<00:00, 10.10it/s]
+Epoch14  MPJPE: 86.9369
+Current epoch 15, lr: 0.0009000000000000001
+Epoch15_(880/915) => total loss: 34.8291 : 100%|█████████████████████| 915/915 [08:52<00:00,  1.72it/s]
+Epoch15 Loss: 35.7632
+Epoch15 (480/555) => joint error: 96.2458: 100%|█████████████████████| 555/555 [00:56<00:00,  9.76it/s]
+Epoch15  MPJPE: 87.5044
+Current epoch 16, lr: 0.0009000000000000001
+Epoch16_(880/915) => total loss: 35.0211 : 100%|█████████████████████| 915/915 [08:50<00:00,  1.73it/s]
+Epoch16 Loss: 35.5783
+Epoch16 (480/555) => joint error: 94.3679: 100%|█████████████████████| 555/555 [00:58<00:00,  9.42it/s]
+Epoch16  MPJPE: 88.3758
+Current epoch 17, lr: 0.0009000000000000001
+Epoch17_(880/915) => total loss: 34.5094 : 100%|█████████████████████| 915/915 [08:50<00:00,  1.73it/s]
+Epoch17 Loss: 35.5205
+Epoch17 (480/555) => joint error: 95.4818: 100%|█████████████████████| 555/555 [00:57<00:00,  9.70it/s]
+Epoch17  MPJPE: 88.1380
+Current epoch 18, lr: 0.0009000000000000001
+Epoch18_(880/915) => total loss: 35.2697 : 100%|█████████████████████| 915/915 [08:48<00:00,  1.73it/s]
+Epoch18 Loss: 35.3391
+Epoch18 (480/555) => joint error: 94.3633: 100%|█████████████████████| 555/555 [01:00<00:00,  9.11it/s]
+Epoch18  MPJPE: 90.7036
+Current epoch 19, lr: 0.0009000000000000001
+Epoch19_(880/915) => total loss: 35.5694 : 100%|█████████████████████| 915/915 [08:51<00:00,  1.72it/s]
+Epoch19 Loss: 35.2764
+Epoch19 (480/555) => joint error: 98.4734: 100%|█████████████████████| 555/555 [00:58<00:00,  9.45it/s]
+Epoch19  MPJPE: 87.0185
+Current epoch 20, lr: 0.0009000000000000001
+Epoch20_(880/915) => total loss: 35.2811 : 100%|█████████████████████| 915/915 [08:50<00:00,  1.72it/s]
+Epoch20 Loss: 35.1509
+Epoch20 (480/555) => joint error: 93.6290: 100%|█████████████████████| 555/555 [00:59<00:00,  9.32it/s]
+Epoch20  MPJPE: 88.2854
+Current epoch 21, lr: 0.0009000000000000001
+Epoch21_(880/915) => total loss: 34.9891 : 100%|█████████████████████| 915/915 [08:50<00:00,  1.72it/s]
+Epoch21 Loss: 35.0843
+Epoch21 (480/555) => joint error: 93.3942: 100%|█████████████████████| 555/555 [01:03<00:00,  8.78it/s]
+Epoch21  MPJPE: 86.1541
+Current epoch 22, lr: 0.0009000000000000001
+Epoch22_(880/915) => total loss: 34.4089 : 100%|█████████████████████| 915/915 [08:50<00:00,  1.72it/s]
+Epoch22 Loss: 34.9918
+Epoch22 (480/555) => joint error: 95.4919: 100%|█████████████████████| 555/555 [00:58<00:00,  9.41it/s]
+Epoch22  MPJPE: 89.5892
+Current epoch 23, lr: 0.0009000000000000001
+Epoch23_(880/915) => total loss: 34.4790 : 100%|█████████████████████| 915/915 [08:52<00:00,  1.72it/s]
+Epoch23 Loss: 34.9177
+Epoch23 (480/555) => joint error: 91.8431: 100%|█████████████████████| 555/555 [00:56<00:00,  9.80it/s]
+Epoch23  MPJPE: 88.6916
+Current epoch 24, lr: 0.0009000000000000001
+Epoch24_(880/915) => total loss: 33.5130 : 100%|█████████████████████| 915/915 [08:51<00:00,  1.72it/s]
+Epoch24 Loss: 34.8233
+Epoch24 (480/555) => joint error: 94.2436: 100%|█████████████████████| 555/555 [00:56<00:00,  9.79it/s]
+Epoch24  MPJPE: 91.8765
+Current epoch 25, lr: 0.0009000000000000001
+Epoch25_(880/915) => total loss: 34.7545 : 100%|█████████████████████| 915/915 [08:52<00:00,  1.72it/s]
+Epoch25 Loss: 34.7676
+Epoch25 (480/555) => joint error: 100.4776: 100%|████████████████████| 555/555 [00:56<00:00,  9.77it/s]
+Epoch25  MPJPE: 87.7309
+Current epoch 26, lr: 0.0009000000000000001
+Epoch26_(880/915) => total loss: 35.5400 : 100%|█████████████████████| 915/915 [08:52<00:00,  1.72it/s]
+Epoch26 Loss: 34.6997
+Epoch26 (480/555) => joint error: 100.5828: 100%|████████████████████| 555/555 [00:59<00:00,  9.31it/s]
+Epoch26  MPJPE: 88.3860
+Current epoch 27, lr: 0.0009000000000000001
+Epoch27_(880/915) => total loss: 35.1608 : 100%|█████████████████████| 915/915 [08:51<00:00,  1.72it/s]
+Epoch27 Loss: 34.6165
+Epoch27 (480/555) => joint error: 96.0741: 100%|█████████████████████| 555/555 [00:56<00:00,  9.76it/s]
+Epoch27  MPJPE: 88.2863
+Current epoch 28, lr: 0.0009000000000000001
+Epoch28_(880/915) => total loss: 35.2151 : 100%|█████████████████████| 915/915 [08:50<00:00,  1.72it/s]
+Epoch28 Loss: 34.5589
+Epoch28 (480/555) => joint error: 95.1521: 100%|█████████████████████| 555/555 [00:58<00:00,  9.48it/s]
+Epoch28  MPJPE: 87.3647
+Current epoch 29, lr: 0.0009000000000000001
+Epoch29_(880/915) => total loss: 33.8787 : 100%|█████████████████████| 915/915 [08:52<00:00,  1.72it/s]
+Epoch29 Loss: 34.4958
+Epoch29 (480/555) => joint error: 93.6473: 100%|█████████████████████| 555/555 [01:02<00:00,  8.86it/s]
+Epoch29  MPJPE: 87.7045
+Current epoch 30, lr: 0.0009000000000000001
+Epoch30_(880/915) => total loss: 34.8014 : 100%|█████████████████████| 915/915 [08:51<00:00,  1.72it/s]
+Epoch30 Loss: 34.4102
+Epoch30 (480/555) => joint error: 93.7013: 100%|█████████████████████| 555/555 [00:57<00:00,  9.68it/s]
+Epoch30  MPJPE: 87.9798
+

@@ -1,0 +1,30 @@
+
+(transpose) cezheng@lambda-dual:/data/GTRS$ python main/test.py --gpu 0,1 --cfg ./asset/yaml/gtrs_human36J_test_human36.yml
+Experiment Data on /data/GTRS/lib/core/../../experiment/exp_12-05_15:34
+Work on GPU:  0,1
+==> Preparing TEST Dataloader...
+/data/GTRS/main/../smplpytorch/smplpytorch/pytorch/smpl_layer.py:41: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370172916/work/torch/csrc/utils/tensor_numpy.cpp:141.)
+  torch.Tensor(smpl_data['betas'].r).unsqueeze(0))
+Load annotations of Human36M Protocol 2
+creating index...
+index created!
+Check lengths of annotation and detection output:  11079 11079
+Heavy Edge Matching coarsening with Xavier version
+# of TEST Human36M data: 11079
+==> Preparing GTRS_net MODEL...
+# of model parameters: 7651615
+==> Loading checkpoint
+Fetch model weight from ./experiment/gtrs_h36m/final.pth.tar
+===> Start testing...
+(170/174) => surface error: 71.3493, joint error: 53.1128: 100%|█| 174/174 [00:3
+ MPVPE: 85.41, MPJPE: 64.36
+Evaluation start...
+Protocol 2 H36M pose error (MPJPE) >> tot: 64.38
+Directions: 56.78 Discussion: 62.35 Eating: 55.40 Greeting: 65.22 Phoning: 65.94 Posing: 58.00 Purchases: 59.40 Sitting: 70.23 SittingDown: 87.05 Smoking: 64.06 Photo: 79.82 Waiting: 64.24 Walking: 49.23 WalkDog: 70.22 WalkTogether: 54.84 
+Protocol 2 H36M pose error (PA-MPJPE) >> tot: 47.68
+Directions: 41.12 Discussion: 44.52 Eating: 42.52 Greeting: 49.16 Phoning: 48.77 Posing: 42.16 Purchases: 39.90 Sitting: 53.43 SittingDown: 70.02 Smoking: 49.55 Photo: 56.26 Waiting: 44.84 Walking: 36.70 WalkDog: 49.77 WalkTogether: 41.90 
+Protocol 2 SMPL pose error (MPJPE) >> tot: 69.46
+Directions: 59.47 Discussion: 68.26 Eating: 65.42 Greeting: 67.07 Phoning: 69.57 Posing: 61.89 Purchases: 65.51 Sitting: 80.02 SittingDown: 93.72 Smoking: 69.03 Photo: 83.43 Waiting: 67.01 Walking: 51.16 WalkDog: 76.51 WalkTogether: 58.71 
+Protocol 2 SMPL mesh error (MPVPE) >> tot: 81.96
+Directions: 73.58 Discussion: 80.08 Eating: 75.47 Greeting: 81.80 Phoning: 83.55 Posing: 74.88 Purchases: 76.56 Sitting: 91.98 SittingDown: 104.64 Smoking: 81.05 Photo: 99.00 Waiting: 79.02 Walking: 60.64 WalkDog: 91.76 WalkTogether: 71.10 
+
