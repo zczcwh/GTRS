@@ -46,3 +46,7 @@ ${ROOT}
 |   |   |   |-- test
 |   |   |   |-- val
 ```
+
+### Pytorch SMPL
+
+Please following instructions in [`pose2mesh`](https://github.com/hongsukchoi/Pose2Mesh_RELEASE) for SMPL files.
