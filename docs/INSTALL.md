@@ -14,5 +14,7 @@ conda activate gtrs
 # Install Pytorch based on your GPU, for example:
 conda install pytorch==1.10.0 torchvision==0.11.0 cudatoolkit=11.3 -c pytorch
 
+```
+
 We provide the  `requirements.txt` lists the packages you needs. 
 
