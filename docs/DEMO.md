@@ -5,7 +5,7 @@ Please note here we implement this demo based on another repository ([`I2LMeshNe
 
 I prepared all files needed, just unzip after downloading from ([`here`](https://knightsucfedu39751-my.sharepoint.com/:u:/g/personal/cezheng_knights_ucf_edu/ES4AV8wSDbVHhysl9Sg6oEwB9NBoG_CZazCHcRi1W947pA?e=fMYeZk).
 
-We integrate ([`TransPose`](https://github.com/yangsenius/TransPose) as 2D pose detector with our proposed GTRS for human mesh recovery. 
+We integrate ([`TransPose`](https://github.com/yangsenius/TransPose)) as 2D pose detector with our proposed GTRS for human mesh recovery. 
 
 All you need to do is prepare an [Anaconda](https://www.anaconda.com/) virtual environment (we prepare a requirements.txt), then
 
