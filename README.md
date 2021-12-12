@@ -28,7 +28,6 @@ ${ROOT}
 
 ### Pretrained model weights
 The pretrained model weights can be download from [here](https://knightsucfedu39751-my.sharepoint.com/:u:/g/personal/cezheng_knights_ucf_edu/EW6qsiX41ftMl4b8RPvhg5gBlBRmgbFarD9H0t1DkJuu1g?e=ZcQD4H) to a corresponding directory.
-```
 
 ### Testing
 
@@ -39,6 +38,7 @@ python main/test.py --gpu 0,1, --cfg ./asset/yaml/gtrs_{input joint set}_test_{d
 ```
 
 For example, if you want to test the results on Human3.6M dataset, you can run:
+
 ```
 python main/test.py --gpu 0,1, --cfg ./asset/yaml/gtrs_human36J_test_human36.yml
 ```
