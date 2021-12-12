@@ -1,9 +1,6 @@
 # A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose
 The project is an official implementation of our paper [A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose](https://arxiv.org/pdf/2111.12696).
 
-## Introduction
-This repository is the offical [Pytorch](https://pytorch.org/) implementation of [Pose2Mesh: Graph Convolutional Network for 3D Human Pose and Mesh Recovery from a 2D Human Pose (ECCV 2020)](https://arxiv.org/abs/2008.09047). Below is the overall pipeline of Pose2Mesh.
-
 ## Installation
 Check [INSTALL.md](docs/INSTALL.md) for installation instructions.
 
