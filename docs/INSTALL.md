@@ -16,5 +16,5 @@ conda install pytorch==1.10.0 torchvision==0.11.0 cudatoolkit=11.3 -c pytorch
 
 ```
 
-We provide the  `requirements.txt` that lists the packages you needs. 
+We provide the  `requirements.txt` that lists the packages you need. 
 
