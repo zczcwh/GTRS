@@ -27,7 +27,7 @@ ${ROOT}
 ```
 
 ### Pretrained model weights
-The pretrained model weights can be download from [here](https://knightsucfedu39751-my.sharepoint.com/:u:/g/personal/cezheng_knights_ucf_edu/EW6qsiX41ftMl4b8RPvhg5gBlBRmgbFarD9H0t1DkJuu1g?e=ZcQD4H) to a corresponding directory.
+The pretrained model weights can be download from [here](https://drive.google.com/file/d/1fIzs5zaEcqzjOmggYXlD8lcO4JAJPb4o/view?usp=sharing) to a corresponding directory.
 
 ### Testing
 
