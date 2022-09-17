@@ -11,7 +11,7 @@ All you need to do is prepare an [Anaconda](https://www.anaconda.com/) virtual e
 
 * Prepare `input.jpg` at `demo` folder.
 
-* Go to `demo` folder and "edit" `bbox` in `demo/demo.py`, line 84.
+* Go to `demo` folder and **edit** `bbox` (following I2LMeshNet, you need manually enter the bbx info for each image) in `demo/demo.py`, line 84.
 
 * run `python demo.py --gpu 0 --stage param --test_epoch 93` if you want to run on gpu 0.
 
