@@ -69,8 +69,8 @@ If you find our work useful in your research, please consider citing:
 @article{ce2021gtrs,
   title={A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose},
   author={Zheng, Ce and Mendieta, Matias and Wang, Pu and Lu, Aidong and Chen, Chen},
-  journal={arXiv preprint arXiv:2111.12696},
-  year={2021}
+  journal={ACM Multimedia},
+  year={2022}
 }
 ```
 
