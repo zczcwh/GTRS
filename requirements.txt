@@ -81,7 +81,7 @@ openssl=1.1.1l=h7f8727e_0
 packaging=21.2=pypi_0
 pcre=8.45=h9c3ff4c_0
 pillow=8.4.0=py39h5aabda8_0
-pip=21.2.4=py39h06a4308_0
+# pip=21.2.4=py39h06a4308_0
 pthread-stubs=0.4=h36c2ea0_1001
 pycocotools=2.0.2=py39hce5d2b2_2
 pyglet=1.5.21=pypi_0
