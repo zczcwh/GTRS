@@ -1,5 +1,21 @@
 ## Demo
-We provide demo codes for end-to-end inference here. 
+Please follow the produce in ([`Pose2Mesh`](https://github.com/hongsukchoi/Pose2Mesh_RELEASE)) for the visualization. 
+The demo ckp (slightly different from the provided ckp which is the old version, but if you re-train our model, you should get this demo ckp) is provided ([`here`](https://drive.google.com/file/d/1PdOymnqadk2Rzjgf2He660mH_uHYlluv/view?usp=share_link).)
+
+Replace the demo ckp, then run 
+`python demo/run.py --gpu 0 --input_pose demo/h36m_joint_input.npy --joint_set human36` if you want to run on gpu 0.
+
+
+
+
+
+
+
+
+
+
+## Additionally
+We provide demo codes for end-to-end inference here. But sometimes it may have the scaling issue. 
 
 Please note here we implement this demo based on another repository ([`I2LMeshNet`](https://github.com/mks0601/I2L-MeshNet_RELEASE)) to achieve end-to-end inference. 
 
