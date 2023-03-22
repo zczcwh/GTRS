@@ -66,10 +66,11 @@ python main/train.py --gpu 0,1, --cfg ./asset/yaml/pam_{input joint set}_train_{
 If you find our work useful in your research, please consider citing:
 
 ```bibtex
-@article{ce2021gtrs,
-  title={A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose},
+@inproceedings{zheng2022lightweight,
+  title={A lightweight graph transformer network for human mesh reconstruction from 2d human pose},
   author={Zheng, Ce and Mendieta, Matias and Wang, Pu and Lu, Aidong and Chen, Chen},
-  journal={ACM Multimedia},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={5496--5507},
   year={2022}
 }
 ```
