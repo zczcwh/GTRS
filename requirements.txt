@@ -107,7 +107,6 @@ tk=8.6.11=h1ccaba5_0
 torchaudio=0.10.0=py39_cu113
 torchgeometry=0.1.2=pypi_0
 torchvision=0.11.1=py39_cu113
-tornado=6.1=py39h3811e60_1
 tqdm=4.62.3=pyhd8ed1ab_0
 transforms3d=0.3.1=pypi_0
 trimesh=3.9.32=pypi_0
